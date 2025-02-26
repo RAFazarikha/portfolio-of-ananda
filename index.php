@@ -12,7 +12,9 @@
 
         <script src="https://kit.fontawesome.com/acfbf2ec75.js" crossorigin="anonymous"></script>
         <!-- Scripts -->
-        <link rel="stylesheet" href="./src/output.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </head>
     <body class="bg-black text-white overflow-x-hidden">
         <nav class="bg-black fixed w-full z-20 top-0 start-0">
