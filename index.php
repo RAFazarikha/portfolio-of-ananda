@@ -4,22 +4,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio Of Roro Ananda S.</title>
+        <title>Portfolio of Roro Ananda S. - Manufacturing Systems Specialist</title>
+
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Explore the portfolio of Roro Ananda S., a specialist in Manufacturing Systems with expertise in production process optimization, quality control, and manufacturing technologies.">
+        <meta name="keywords" content="Manufacturing Systems, Production Process Optimization, Quality Control, Manufacturing Technologies, Operational Performance, Roro Ananda S.">
+        <meta name="author" content="Roro Ananda S.">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph Meta Tags (for social media sharing) -->
+        <meta property="og:title" content="Portfolio of Roro Ananda S. - Manufacturing Systems Specialist">
+        <meta property="og:description" content="Discover the expertise of Roro Ananda S. in Manufacturing Systems, specializing in production workflows, quality control, and operational efficiency.">
+        <!-- <meta property="og:image" content="https://www.example.com/profile-image.jpg">
+        <meta property="og:url" content="https://www.example.com"> -->
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Portfolio of Roro Ananda S. - Manufacturing Systems Specialist">
+        <meta name="twitter:description" content="Explore the portfolio of Roro Ananda S., an expert in Manufacturing Systems and production optimization.">
+        <!-- <meta name="twitter:image" content="https://www.example.com/profile-image.jpg"> -->
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <script src="https://kit.fontawesome.com/acfbf2ec75.js" crossorigin="anonymous"></script>
-        <!-- Scripts -->
+
+        <!-- CSS & JS Libraries -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
         <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+        <!-- Contact & Social Media -->
+        <link rel="me" href="https://api.whatsapp.com/send/?phone=62881027104776&text&type=phone_number&app_absent=0">
+        <link rel="me" href="https://www.instagram.com/roroananda/">
     </head>
+
     <body class="bg-black text-white overflow-x-hidden">
         <nav class="bg-black fixed w-full z-20 top-0 start-0">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
