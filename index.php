@@ -74,7 +74,7 @@
         </nav>
         
         <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="background-image: url('images/bg.png'); background-size: cover; background-position: center;">
-            <section id="home" class="flex flex-col md:flex-row items-center justify-between py-10">
+            <section id="home" class="flex flex-col md:flex-row items-center justify-between pb-10 pt-25">
                 <div class="max-w-xl">
                     <h1 class="text-7xl font-bold">
                         <span class="text-blue-500">Profile and</span>
