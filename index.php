@@ -12,7 +12,11 @@
 
         <script src="https://kit.fontawesome.com/acfbf2ec75.js" crossorigin="anonymous"></script>
         <!-- Scripts -->
-        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
         <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     </head>
@@ -56,7 +60,7 @@
                     <a href="#" class="mt-6 inline-block px-6 py-2 border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition">roroanandasetyawardhani@gmail.com</a>
                 </div>
                 <div class="relative mt-10 md:mt-0" data-aos="fade-left">
-                    <img src="{{ asset('storage/images/roro.png') }}" alt="Engineer" class="w-90 h-auto rounded-lg">
+                    <img src="images/roro.png" alt="Engineer" class="w-90 h-auto rounded-lg">
                 </div>
             </section>
             <section id="about" class="my-10 py-14 text-center">
@@ -64,7 +68,7 @@
                 <div class="my-3 bg-blue-500 h-1 w-96 mx-auto"></div>
                 <div class="flex flex-col md:flex-row items-center md:items-center justify-center gap-10 mt-5">
                     <div class="relative w-75 h-auto overflow-hidden" data-aos="fade-right">
-                        <img src="{{ asset('storage/images/roro2.png') }}" alt="Profile" class="w-full h-full object-cover">
+                        <img src="images/roro2.png" alt="Profile" class="w-full h-full object-cover">
                     </div>
                     <div class="max-w-3xl" data-aos="fade-left">
                         <h1 class="text-3xl font-bold text-left">Roro Ananda Setyawardhani</span></h1>
@@ -77,7 +81,7 @@
                 <div class="my-3 bg-blue-500 h-1 w-96 mx-auto"></div>
                 <div class="text-left mt-5 py-10 flex flex-col md:flex-row items-center md:items-start">
                     <div class="w-1/2 md:w-max h-auto overflow-hidden mb-5 md:mb-0" data-aos="fade-right">
-                        <img src="{{ asset('storage/images/roro4.png') }}" alt="Profile" class="w-full h-auto">
+                        <img src="images/roro4.png" alt="Profile" class="w-full h-auto">
                     </div>
                     <div data-aos="fade-left" class="w-1/2">
                         <ol class="relative border-s border-blue-500">                  
@@ -113,94 +117,105 @@
                 <h1 class="text-5xl font-bold text-center my-5 pt-10">My <span class="text-blue-500">Project</span></h1>
                 <div class="my-3 bg-blue-500 h-1 w-96 mx-auto"></div>
                 <div class="text-left mt-5 py-10 flex flex-wrap gap-5 md:flex-row">
-                    <x-card-project :data="[
-                        'id' => 'project-1',
-                        'judul' => 'Analisis dan Penerapan Konsep Fisika Dasar dalam Pengukuran dan Rangkaian Listrik',
-                        'short-description' => 'Proyek ini bertujuan untuk mengembangkan pemahaman terhadap konsep dasar Fisika melalui eksperimen yang terstruktur dan sistematis.',
-                        'description-1' => 'Proyek ini bertujuan untuk mengembangkan pemahaman terhadap konsep dasar Fisika melalui eksperimen yang terstruktur dan sistematis. Fokus utama proyek mencakup :',
-                        'description-2' => 'Hasil proyek ini menghasilkan panduan eksperimental yang dapat digunakan sebagai referensi dalam praktikum Fisika Dasar. Data yang diperoleh menunjukkan peningkatan akurasi dalam pengukuran besaran fisis serta pemahaman yang lebih baik terkait analisis rangkaian listrik. Selain itu, proyek ini juga memberikan evaluasi terhadap kesalahan pengukuran dan faktor-faktor yang mempengaruhi ketelitian hasil eksperimen, yang dapat menjadi acuan dalam pengembangan metode praktikum yang lebih efektif di masa mendatang.',
-                        'link' => 'https://drive.google.com/file/d/1fuGCUj5hZ66AS2zcj0eh7-zoyyFspNkN/view?usp=drive_link'
-                    ]">
-                        <li>Teknik pengukuran menggunakan jangka sorong dan mikrometer sekrup untuk meningkatkan akurasi dalam menentukan dimensi suatu objek.</li>
-                        <li>Metode pengukuran volume zat cair sebagai dasar dalam analisis fluida.</li>
-                        <li>Validasi Hukum Ohm melalui percobaan dengan berbagai nilai resistor dalam rangkaian seri dan paralel, guna memahami hubungan antara tegangan, arus, dan hambatan listrik.</li>
-                    </x-card-project>
+                <?php
+                    include 'card-project.php';
 
-                    <x-card-project :data="[
-                        'id' => 'project-2',
-                        'judul' => 'Implementasi Autodesk Inventor dalam Pembuatan Sketch 2D dan 3D untuk Desain Teknik',
-                        'short-description' => 'Proyek ini bertujuan untuk meningkatkan pemahaman terhadap proses desain teknik melalui penggunaan perangkat lunak Autodesk Inventor.',
-                        'description-1' => 'Proyek ini bertujuan untuk meningkatkan pemahaman terhadap proses desain teknik melalui penggunaan perangkat lunak Autodesk Inventor. Fokus utama proyek mencakup :',
-                        'description-2' => 'Proyek ini menghasilkan pedoman praktis untuk penggunaan Autodesk Inventor dalam desain teknik, yang dapat digunakan oleh mahasiswa maupun praktisi untuk meningkatkan efisiensi dalam pembuatan model digital. Hasil proyek menunjukkan bahwa dengan memahami dan mengaplikasikan berbagai fitur pada perangkat lunak ini, pengguna dapat menghasilkan desain yang lebih akurat dan realistis. Selain itu, evaluasi dilakukan untuk mengidentifikasi tantangan yang dihadapi dalam penggunaan software dan memberikan solusi dalam meningkatkan efektivitas pembelajaran desain teknik berbasis CAD.',
-                        'link' => 'https://drive.google.com/file/d/1o7uM8kJ6kS-UNP3-fKf-sebu9anOeSr6/view?usp=drive_link'
-                    ]">
-                        <li>Pengenalan dan penggunaan toolbar dasar Autodesk Inventor dalam pembuatan sketch 2D dan 3D.</li>
-                        <li>Penggunaan fitur-fitur seperti extrude, revolve, hole, dan shell untuk membentuk model 3D secara presisi.</li>
-                        <li>Penerapan standar gambar teknik sesuai dengan kaidah industri dalam proses desain.</li>
-                    </x-card-project>
+                    $projects = [
+                        [
+                            'id' => 'project-1',
+                            'judul' => 'Analisis dan Penerapan Konsep Fisika Dasar dalam Pengukuran dan Rangkaian Listrik',
+                            'short-description' => 'Proyek ini bertujuan untuk mengembangkan pemahaman terhadap konsep dasar Fisika melalui eksperimen yang terstruktur dan sistematis.',
+                            'description-1' => 'Proyek ini bertujuan untuk mengembangkan pemahaman terhadap konsep dasar Fisika melalui eksperimen yang terstruktur dan sistematis. Fokus utama proyek mencakup :',
+                            'description-2' => 'Hasil proyek ini menghasilkan panduan eksperimental yang dapat digunakan sebagai referensi dalam praktikum Fisika Dasar. Data yang diperoleh menunjukkan peningkatan akurasi dalam pengukuran besaran fisis serta pemahaman yang lebih baik terkait analisis rangkaian listrik. Selain itu, proyek ini juga memberikan evaluasi terhadap kesalahan pengukuran dan faktor-faktor yang mempengaruhi ketelitian hasil eksperimen, yang dapat menjadi acuan dalam pengembangan metode praktikum yang lebih efektif di masa mendatang.',
+                            'link' => 'https://drive.google.com/file/d/1fuGCUj5hZ66AS2zcj0eh7-zoyyFspNkN/view?usp=drive_link',
+                            'slot' => [
+                                'Teknik pengukuran menggunakan jangka sorong dan mikrometer sekrup untuk meningkatkan akurasi dalam menentukan dimensi suatu objek.',
+                                'Metode pengukuran volume zat cair sebagai dasar dalam analisis fluida.',
+                                'Validasi Hukum Ohm melalui percobaan dengan berbagai nilai resistor dalam rangkaian seri dan paralel, guna memahami hubungan antara tegangan, arus, dan hambatan listrik.'
+                            ]
+                        ],
+                        [
+                            'id' => 'project-2',
+                            'judul' => 'Implementasi Autodesk Inventor dalam Pembuatan Sketch 2D dan 3D untuk Desain Teknik',
+                            'short-description' => 'Proyek ini bertujuan untuk meningkatkan pemahaman terhadap proses desain teknik melalui penggunaan perangkat lunak Autodesk Inventor.',
+                            'description-1' => 'Proyek ini bertujuan untuk meningkatkan pemahaman terhadap proses desain teknik melalui penggunaan perangkat lunak Autodesk Inventor. Fokus utama proyek mencakup :',
+                            'description-2' => 'Proyek ini menghasilkan pedoman praktis untuk penggunaan Autodesk Inventor dalam desain teknik, yang dapat digunakan oleh mahasiswa maupun praktisi untuk meningkatkan efisiensi dalam pembuatan model digital. Hasil proyek menunjukkan bahwa dengan memahami dan mengaplikasikan berbagai fitur pada perangkat lunak ini, pengguna dapat menghasilkan desain yang lebih akurat dan realistis. Selain itu, evaluasi dilakukan untuk mengidentifikasi tantangan yang dihadapi dalam penggunaan software dan memberikan solusi dalam meningkatkan efektivitas pembelajaran desain teknik berbasis CAD.',
+                            'link' => 'https://drive.google.com/file/d/1o7uM8kJ6kS-UNP3-fKf-sebu9anOeSr6/view?usp=drive_link',
+                            'slot' => [
+                                'Pengenalan dan penggunaan toolbar dasar Autodesk Inventor dalam pembuatan sketch 2D dan 3D.',
+                                'Penggunaan fitur-fitur seperti extrude, revolve, hole, dan shell untuk membentuk model 3D secara presisi.',
+                                'Penerapan standar gambar teknik sesuai dengan kaidah industri dalam proses desain.'
+                            ]
+                        ],
+                        [
+                            'id' => 'project-3',
+                            'judul' => 'Analisis dan Implementasi Proses Manufaktur dalam Produksi Produk Kursi',
+                            'short-description' => 'Proyek ini bertujuan untuk mengaplikasikan konsep proses manufaktur dalam produksi produk kursi melalui berbagai metode produksi.',
+                            'description-1' => 'Proyek ini bertujuan untuk mengaplikasikan konsep proses manufaktur dalam produksi produk kursi melalui berbagai metode produksi. Fokus utama proyek mencakup :',
+                            'description-2' => 'Hasil proyek ini menghasilkan dokumentasi lengkap mengenai tahapan proses manufaktur yang dapat digunakan sebagai referensi dalam pengajaran dan pengembangan industri kecil. Data yang diperoleh menunjukkan peningkatan efisiensi dalam produksi serta analisis kualitas produk yang lebih terukur. Selain itu, proyek ini memberikan evaluasi terhadap efisiensi proses, kesalahan manufaktur, serta rekomendasi untuk optimalisasi produksi di masa depan.',
+                            'link' => 'https://drive.google.com/file/d/19CPGFpeddrHyPrQsc705cX-C4WW7xi_A/view?usp=drive_link',
+                            'slot' => [
+                                'Pengukuran dimensi, toleransi, dan suaian komponen kursi untuk memastikan kesesuaian dalam perakitan.',
+                                'Penerapan fungsi kerja bangku seperti pemotongan, pengikiran, dan penggerindaan dalam tahap awal manufaktur.',
+                                'Proses pemesinan drilling dan turning untuk membentuk komponen dengan presisi tinggi.',
+                                'Teknik penyambungan (pengelasan) guna memastikan kekuatan dan daya tahan struktur kursi.',
+                                'Implementasi teknologi 3D printing dalam pembuatan komponen tertentu.',
+                                'Proses assembly dan finishing untuk memastikan kualitas akhir produk.',
+                                'Penerapan metode pengendalian kualitas untuk mengidentifikasi dan mengurangi cacat produksi.',
+                                'Perancangan desain kemasan sebagai tahap akhir dalam siklus produksi.'
+                            ]
+                        ],
+                        [
+                            'id' => 'project-4',
+                            'judul' => 'Perancangan Tata Letak Fasilitas untuk Optimalisasi Aliran Material dan Efisiensi',
+                            'short-description' => 'Proyek ini bertujuan untuk mengembangkan perancangan tata letak fasilitas yang optimal guna meningkatkan efisiensi aliran material dan mengurangi biaya produksi.',
+                            'description-1' => 'Proyek ini bertujuan untuk mengembangkan perancangan tata letak fasilitas yang optimal guna meningkatkan efisiensi aliran material dan mengurangi biaya produksi. Studi ini dilakukan pada PT Myra Jaya Industri dengan beberapa fokus utama, yaitu :',
+                            'description-2' => 'Hasil proyek ini menghasilkan desain tata letak fasilitas yang lebih efisien dengan mengoptimalkan pemanfaatan ruang, mengurangi biaya material handling, serta meningkatkan produktivitas produksi. Dengan pendekatan sistematis melalui tujuh modul praktikum, proyek ini memberikan rekomendasi desain tata letak yang dapat diterapkan dalam industri manufaktur guna mendukung proses produksi yang lebih efektif dan ekonomis.',
+                            'link' => 'https://drive.google.com/file/d/1nf89w2uPgIOQKEgVHU1FoBYqtfLJUcgy/view?usp=drive_link',
+                            'slot' => [
+                                'Analisis kebutuhan luas pabrik dan pemilihan lokasi strategis berdasarkan berbagai faktor industri.',
+                                'Penyusunan diagram aliran material (Flow Diagram) dan pemetaan aliran proses produksi untuk meminimalkan waktu perpindahan material.',
+                                'Penggunaan metode Activity Relationship Chart (ARC) dan Activity Relationship Diagram (ARD) untuk menyusun tata letak fasilitas yang lebih efisien.',
+                                'Perhitungan biaya material handling (Material Handling Cost) guna mengurangi biaya operasional produksi.',
+                                'Pengkajian investasi, biaya produksi tahunan, serta analisis kelayakan ekonomi melalui metode Net Present Value (NPV).'
+                            ]
+                        ],
+                        [
+                            'id' => 'project-5',
+                            'judul' => 'Pengembangan Sistem Basis Data E-Pustaka untuk Optimalisasi Manajemen Perpustakaan Digital',
+                            'short-description' => 'Proyek ini bertujuan untuk merancang dan mengimplementasikan sistem basis data berbasis web untuk perpustakaan digital (E-Pustaka) guna meningkatkan efisiensi peminjaman dan pengelolaan buku di lingkungan sekolah menengah.',
+                            'description-1' => 'Proyek ini bertujuan untuk merancang dan mengimplementasikan sistem basis data berbasis web untuk perpustakaan digital (E-Pustaka) guna meningkatkan efisiensi peminjaman dan pengelolaan buku di lingkungan sekolah menengah. Fokus utama proyek mencakup :',
+                            'description-2' => 'Hasil proyek ini menghasilkan sistem E-Pustaka yang memungkinkan pengguna mengakses perpustakaan digital secara lebih fleksibel dan efisien. Sistem ini mengurangi waktu tunggu dalam peminjaman buku, mempermudah pencarian koleksi, serta memberikan fitur pelacakan riwayat peminjaman untuk meningkatkan ketertiban dalam pengelolaan perpustakaan sekolah. Dengan sistem ini, proses administrasi perpustakaan dapat berjalan lebih cepat dan akurat, sekaligus mendorong budaya membaca di kalangan siswa dan guru.',
+                            'link' => 'https://drive.google.com/file/d/11QD65pVZDF69gIhXI70KXtu-AiiLMEG7/view?usp=drive_link',
+                            'slot' => [
+                                'Pengembangan arsitektur basis data menggunakan MySQL untuk menyimpan dan mengelola informasi buku, anggota, serta transaksi peminjaman dan pengembalian.',
+                                'Penerapan framework Zachman untuk mendefinisikan kebutuhan sistem, termasuk aspek data, fungsi, pengguna, lokasi implementasi, serta jadwal pemeliharaan sistem.',
+                                'Pemodelan sistem menggunakan Unified Modeling Language (UML) berupa Use Case Diagram dan Activity Diagram untuk memvisualisasikan interaksi pengguna dengan sistem.',
+                                'Pembuatan antarmuka pengguna (Graphical User Interface/GUI) berbasis web menggunakan HTML, CSS, dan PHP agar mudah diakses oleh siswa, guru, dan admin perpustakaan.',
+                                'Pengembangan fitur utama seperti pencarian buku, peminjaman dan pengembalian buku online, serta pencetakan daftar buku dan bukti peminjaman dalam format PDF.'
+                            ]
+                        ],
+                        [
+                            'id' => 'project-6',
+                            'judul' => 'Analisis Hazard Identification and Risk Assessment (HIRA) untuk Meningkatkan Keselamatan Kerja',
+                            'short-description' => 'Proyek ini bertujuan untuk menganalisis pentingnya sikap positif terhadap keselamatan kerja dalam mencegah kecelakaan kerja melalui pendekatan Hazard Identification and Risk Assessment (HIRA).',
+                            'description-1' => 'Proyek ini bertujuan untuk menganalisis pentingnya sikap positif terhadap keselamatan kerja dalam mencegah kecelakaan kerja melalui pendekatan Hazard Identification and Risk Assessment (HIRA). Fokus utama proyek mencakup :',
+                            'description-2' => 'Hasil proyek ini menunjukkan bahwa penerapan metode HIRA dapat secara signifikan mengurangi risiko kecelakaan kerja melalui identifikasi dan mitigasi bahaya secara sistematis. Studi ini juga menyoroti pentingnya membangun budaya keselamatan kerja yang berfokus pada edukasi, pelatihan, dan kesadaran individu terhadap risiko di tempat kerja. Dengan adanya pendekatan yang lebih holistik, perusahaan dapat meningkatkan kepatuhan terhadap regulasi K3 serta menciptakan lingkungan kerja yang lebih aman dan produktif',
+                            'link' => 'https://drive.google.com/file/d/1N6Frn6NoA6k-osfFK80ktLp58b_StiJ5/view?usp=drive_link',
+                            'slot' => [
+                                'Identifikasi bahaya (hazard identification) di tempat kerja yang berpotensi menyebabkan cedera atau kecelakaan.',
+                                'Penilaian risiko (risk assessment) berdasarkan faktor tingkat keparahan dan probabilitas kejadian untuk menentukan tingkat risiko.',
+                                'Pengendalian risiko (risk control) melalui penerapan alat pelindung diri (APD), prosedur keselamatan, dan pembentukan budaya keselamatan kerja.',
+                                'Evaluasi dampak dari sikap negatif terhadap keselamatan kerja terhadap produktivitas dan kesejahteraan pekerja.',
+                                'Rekomendasi strategi penerapan HIRA yang lebih efektif dalam meningkatkan kepatuhan terhadap prosedur keselamatan.'
+                            ]
+                        ]
+                    ];
 
-                    <x-card-project :data="[
-                        'id' => 'project-3',
-                        'judul' => 'Analisis dan Implementasi Proses Manufaktur dalam Produksi Produk Kursi',
-                        'short-description' => 'Proyek ini bertujuan untuk mengaplikasikan konsep proses manufaktur dalam produksi produk kursi melalui berbagai metode produksi.',
-                        'description-1' => 'Proyek ini bertujuan untuk mengaplikasikan konsep proses manufaktur dalam produksi produk kursi melalui berbagai metode produksi. Fokus utama proyek mencakup :',
-                        'description-2' => 'Hasil proyek ini menghasilkan dokumentasi lengkap mengenai tahapan proses manufaktur yang dapat digunakan sebagai referensi dalam pengajaran dan pengembangan industri kecil. Data yang diperoleh menunjukkan peningkatan efisiensi dalam produksi serta analisis kualitas produk yang lebih terukur. Selain itu, proyek ini memberikan evaluasi terhadap efisiensi proses, kesalahan manufaktur, serta rekomendasi untuk optimalisasi produksi di masa depan.',
-                        'link' => 'https://drive.google.com/file/d/19CPGFpeddrHyPrQsc705cX-C4WW7xi_A/view?usp=drive_link'
-                    ]">
-                        <li>Pengukuran dimensi, toleransi, dan suaian komponen kursi untuk memastikan kesesuaian dalam perakitan.</li>
-                        <li>Penerapan fungsi kerja bangku seperti pemotongan, pengikiran, dan penggerindaan dalam tahap awal manufaktur.</li>
-                        <li>Proses pemesinan drilling dan turning untuk membentuk komponen dengan presisi tinggi.</li>
-                        <li>Teknik penyambungan (pengelasan) guna memastikan kekuatan dan daya tahan struktur kursi.</li>
-                        <li>Implementasi teknologi 3D printing dalam pembuatan komponen tertentu.</li>
-                        <li>Proses assembly dan finishing untuk memastikan kualitas akhir produk.</li>
-                        <li>Penerapan metode pengendalian kualitas untuk mengidentifikasi dan mengurangi cacat produksi.</li>
-                        <li>Perancangan desain kemasan sebagai tahap akhir dalam siklus produksi.</li>
-                    </x-card-project>
-
-                    <x-card-project :data="[
-                        'id' => 'project-4',
-                        'judul' => 'Perancangan Tata Letak Fasilitas untuk Optimalisasi Aliran Material dan Efisiensi',
-                        'short-description' => 'Proyek ini bertujuan untuk mengembangkan perancangan tata letak fasilitas yang optimal guna meningkatkan efisiensi aliran material dan mengurangi biaya produksi.',
-                        'description-1' => 'Proyek ini bertujuan untuk mengembangkan perancangan tata letak fasilitas yang optimal guna meningkatkan efisiensi aliran material dan mengurangi biaya produksi. Studi ini dilakukan pada PT Myra Jaya Industri dengan beberapa fokus utama, yaitu :',
-                        'description-2' => 'Hasil proyek ini menghasilkan desain tata letak fasilitas yang lebih efisien dengan mengoptimalkan pemanfaatan ruang, mengurangi biaya material handling, serta meningkatkan produktivitas produksi. Dengan pendekatan sistematis melalui tujuh modul praktikum, proyek ini memberikan rekomendasi desain tata letak yang dapat diterapkan dalam industri manufaktur guna mendukung proses produksi yang lebih efektif dan ekonomis.',
-                        'link' => 'https://drive.google.com/file/d/1nf89w2uPgIOQKEgVHU1FoBYqtfLJUcgy/view?usp=drive_link'
-                    ]">
-                        <li>Analisis kebutuhan luas pabrik dan pemilihan lokasi strategis berdasarkan berbagai faktor industri.</li>
-                        <li>Penyusunan diagram aliran material (Flow Diagram) dan pemetaan aliran proses produksi untuk meminimalkan waktu perpindahan material.</li>
-                        <li>Penggunaan metode Activity Relationship Chart (ARC) dan Activity Relationship Diagram (ARD) untuk menyusun tata letak fasilitas yang lebih efisien.</li>
-                        <li>Perhitungan biaya material handling (Material Handling Cost) guna mengurangi biaya operasional produksi.</li>
-                        <li>Pengkajian investasi, biaya produksi tahunan, serta analisis kelayakan ekonomi melalui metode Net Present Value (NPV).</li>
-                    </x-card-project>
-
-                    <x-card-project :data="[
-                        'id' => 'project-5',
-                        'judul' => 'Pengembangan Sistem Basis Data E-Pustaka untuk Optimalisasi Manajemen Perpustakaan Digital',
-                        'short-description' => 'Proyek ini bertujuan untuk merancang dan mengimplementasikan sistem basis data berbasis web untuk perpustakaan digital (E-Pustaka) guna meningkatkan efisiensi peminjaman dan pengelolaan buku di lingkungan sekolah menengah.',
-                        'description-1' => 'Proyek ini bertujuan untuk merancang dan mengimplementasikan sistem basis data berbasis web untuk perpustakaan digital (E-Pustaka) guna meningkatkan efisiensi peminjaman dan pengelolaan buku di lingkungan sekolah menengah. Fokus utama proyek mencakup :',
-                        'description-2' => 'Hasil proyek ini menghasilkan sistem E-Pustaka yang memungkinkan pengguna mengakses perpustakaan digital secara lebih fleksibel dan efisien. Sistem ini mengurangi waktu tunggu dalam peminjaman buku, mempermudah pencarian koleksi, serta memberikan fitur pelacakan riwayat peminjaman untuk meningkatkan ketertiban dalam pengelolaan perpustakaan sekolah. Dengan sistem ini, proses administrasi perpustakaan dapat berjalan lebih cepat dan akurat, sekaligus mendorong budaya membaca di kalangan siswa dan guru.',
-                        'link' => 'https://drive.google.com/file/d/11QD65pVZDF69gIhXI70KXtu-AiiLMEG7/view?usp=drive_link'
-                    ]">
-                        <li>Pengembangan arsitektur basis data menggunakan MySQL untuk menyimpan dan mengelola informasi buku, anggota, serta transaksi peminjaman dan pengembalian.</li>
-                        <li>Penerapan framework Zachman untuk mendefinisikan kebutuhan sistem, termasuk aspek data, fungsi, pengguna, lokasi implementasi, serta jadwal pemeliharaan sistem.</li>
-                        <li>Pemodelan sistem menggunakan Unified Modeling Language (UML) berupa Use Case Diagram dan Activity Diagram untuk memvisualisasikan interaksi pengguna dengan sistem.</li>
-                        <li>Pembuatan antarmuka pengguna (Graphical User Interface/GUI) berbasis web menggunakan HTML, CSS, dan PHP agar mudah diakses oleh siswa, guru, dan admin perpustakaan.</li>
-                        <li>Pengembangan fitur utama seperti pencarian buku, peminjaman dan pengembalian buku online, serta pencetakan daftar buku dan bukti peminjaman dalam format PDF.</li>
-                    </x-card-project>
-
-                    <x-card-project :data="[
-                        'id' => 'project-6',
-                        'judul' => 'Analisis Hazard Identification and Risk Assessment (HIRA) untuk Meningkatkan Keselamatan Kerja',
-                        'short-description' => 'Proyek ini bertujuan untuk menganalisis pentingnya sikap positif terhadap keselamatan kerja dalam mencegah kecelakaan kerja melalui pendekatan Hazard Identification and Risk Assessment (HIRA).',
-                        'description-1' => 'Proyek ini bertujuan untuk menganalisis pentingnya sikap positif terhadap keselamatan kerja dalam mencegah kecelakaan kerja melalui pendekatan Hazard Identification and Risk Assessment (HIRA). Fokus utama proyek mencakup :',
-                        'description-2' => 'Hasil proyek ini menunjukkan bahwa penerapan metode HIRA dapat secara signifikan mengurangi risiko kecelakaan kerja melalui identifikasi dan mitigasi bahaya secara sistematis. Studi ini juga menyoroti pentingnya membangun budaya keselamatan kerja yang berfokus pada edukasi, pelatihan, dan kesadaran individu terhadap risiko di tempat kerja. Dengan adanya pendekatan yang lebih holistik, perusahaan dapat meningkatkan kepatuhan terhadap regulasi K3 serta menciptakan lingkungan kerja yang lebih aman dan produktif',
-                        'link' => 'https://drive.google.com/file/d/1N6Frn6NoA6k-osfFK80ktLp58b_StiJ5/view?usp=drive_link'
-                    ]">
-                        <li>Identifikasi bahaya (hazard identification) di tempat kerja yang berpotensi menyebabkan cedera atau kecelakaan.</li>
-                        <li>Penilaian risiko (risk assessment) berdasarkan faktor tingkat keparahan dan probabilitas kejadian untuk menentukan tingkat risiko.</li>
-                        <li>Pengendalian risiko (risk control) melalui penerapan alat pelindung diri (APD), prosedur keselamatan, dan pembentukan budaya keselamatan kerja.</li>
-                        <li>Evaluasi dampak dari sikap negatif terhadap keselamatan kerja terhadap produktivitas dan kesejahteraan pekerja.</li>
-                        <li>Rekomendasi strategi penerapan HIRA yang lebih efektif dalam meningkatkan kepatuhan terhadap prosedur keselamatan.</li>
-                    </x-card-project>
+                    foreach ($projects as $project) {
+                        renderProjectCard($project);
+                    }
+                    ?>
                 </div>
             </section>
             <section id="contact" class="mt-10 mb-40 py-14 text-center">
@@ -223,6 +238,9 @@
                 </div>
             </section>
         </main>
+        <script>
+            AOS.init();
+        </script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 const sections = document.querySelectorAll("section");
