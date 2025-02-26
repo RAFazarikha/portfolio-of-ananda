@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Portfolio Of Roro Ananda S.</title>
 
@@ -13,7 +12,7 @@
 
         <script src="https://kit.fontawesome.com/acfbf2ec75.js" crossorigin="anonymous"></script>
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" href="./src/output.css">
     </head>
     <body class="bg-black text-white overflow-x-hidden">
         <nav class="bg-black fixed w-full z-20 top-0 start-0">
