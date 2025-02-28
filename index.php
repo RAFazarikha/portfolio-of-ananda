@@ -58,17 +58,22 @@
                 </button>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-default">
                     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-blue-500 rounded-lg bg-black md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black" id="navbar">
-                    <?php
-                        $sections = ['home', 'about', 'education', 'project', 'contact'];
-                    ?>
-                        <?php foreach ($sections as $section): ?>
-                            <li class="text-white">
-                                <a href="#<?= $section ?>" class="block py-2 px-3 rounded-sm hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 nav-link" data-section="<?= $section ?>">
-                                    <?= ucfirst($section) ?>
-                                </a>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>                               
+                        <li class="text-white">
+                            <a href="#home" class="block py-2 px-3 rounded-sm hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 nav-link" data-section="home">Home</a>
+                        </li>
+                        <li class="text-white">
+                            <a href="#about" class="block py-2 px-3 rounded-sm hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 nav-link" data-section="about">About</a>
+                        </li>
+                        <li class="text-white">
+                            <a href="#education" class="block py-2 px-3 rounded-sm hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 nav-link" data-section="education">Education</a>
+                        </li>
+                        <li class="text-white">
+                            <a href="#project" class="block py-2 px-3 rounded-sm hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 nav-link" data-section="project">Project</a>
+                        </li>
+                        <li class="text-white">
+                            <a href="#contact" class="block py-2 px-3 rounded-sm hover:bg-blue-500 md:hover:bg-transparent md:hover:text-blue-500 md:p-0 nav-link" data-section="contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
